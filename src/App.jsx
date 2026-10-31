@@ -7,6 +7,7 @@ import Services from './components/Services'
 import Projects from './components/Projects'
 import Internships from './components/Internships'
 import SoftSkills from './components/SoftSkills'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { internshipsList } from './data/portfolioData'
 
@@ -22,6 +23,7 @@ export default function App() {
       <Projects />
       {internshipsList && internshipsList.length > 0 && <Internships />}
       <SoftSkills />
+      <Contact />
       <Footer />
     </>
   )
