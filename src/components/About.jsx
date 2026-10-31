@@ -65,7 +65,7 @@ export default function About() {
                   {/* Photo */}
                   <img
                     src={stackImage}
-                    alt={personalInfo.name}
+                    alt={`${personalInfo.name} - Profile Portrait`}
                     className="w-full flex-1 rounded-xl object-cover object-top"
                   />
                 </div>
@@ -97,6 +97,7 @@ export default function About() {
                       <a
                         href={`mailto:${personalInfo.emails.primary}`}
                         onClick={(e) => e.stopPropagation()}
+                        aria-label={`Send email to ${personalInfo.emails.primary}`}
                         className="flex items-center space-x-2 hover:text-[#ff2a2a] transition-colors truncate"
                       >
                         <svg className="w-4 h-4 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24">
@@ -110,6 +111,7 @@ export default function About() {
                       <a
                         href={`tel:${personalInfo.phone}`}
                         onClick={(e) => e.stopPropagation()}
+                        aria-label={`Call ${personalInfo.phone}`}
                         className="flex items-center space-x-2 hover:text-[#ff2a2a] transition-colors"
                       >
                         <svg className="w-4 h-4 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24">
@@ -135,6 +137,7 @@ export default function About() {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
+                          aria-label="LinkedIn Profile"
                           className="flex items-center space-x-1.5 hover:text-[#ff2a2a] transition-colors"
                         >
                           <svg className="w-3.5 h-3.5 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24">
@@ -150,6 +153,7 @@ export default function About() {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
+                          aria-label="GitHub Profile"
                           className="flex items-center space-x-1.5 hover:text-[#ff2a2a] transition-colors"
                         >
                           <svg className="w-3.5 h-3.5 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24">
