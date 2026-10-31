@@ -65,7 +65,7 @@ export default function About() {
                   {/* Photo */}
                   <img
                     src={stackImage}
-                    alt={`${personalInfo.name} - Profile Portrait`}
+                    alt="YASHWIN SHIVADAS DEVADIGA — Python Full Stack Developer, TAP Academy student"
                     className="w-full flex-1 rounded-xl object-cover object-top"
                   />
                 </div>
