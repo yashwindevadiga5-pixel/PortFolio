@@ -5,7 +5,7 @@ A high-performance single-page developer portfolio showcasing full-stack web app
 Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).
 
 ## Live Site
-- **URL**: https://YOUR-SITE-URL/
+- **URL**: https://myfortfolio-roan.vercel.app/
 
 ## Tech Stack
 - **React 19**
