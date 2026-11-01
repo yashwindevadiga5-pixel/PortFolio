@@ -30,9 +30,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Left: Brand / Logo */}
-        <a href="#" className="text-white text-2xl font-black tracking-tight">
-          {personalInfo.brandName}
-          <span className="text-red-500">.</span>
+        <a href="#" className="text-white text-lg sm:text-xl md:text-2xl font-black tracking-tight whitespace-nowrap">
+          <span className="md:hidden">
+            {personalInfo.brandName.split(' ')[0]}
+            <span className="text-red-500">.</span>
+          </span>
+          <span className="hidden md:inline">
+            {personalInfo.brandName}
+            <span className="text-red-500">.</span>
+          </span>
         </a>
 
         {/* Centre: Desktop Links */}

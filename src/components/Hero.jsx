@@ -34,7 +34,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative w-full h-screen overflow-hidden bg-[#ff2a2a]">
+    <section id="home" className="relative w-full min-h-screen md:h-screen overflow-hidden bg-[#ff2a2a]">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -47,7 +47,7 @@ export default function Hero() {
       </video>
 
       {/* Readability gradient overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-black/45 via-black/10 to-transparent" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black/80 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/45 md:via-black/10 md:to-transparent" />
 
       {/* Left floating social bar (desktop only) */}
       <div className="hidden lg:flex flex-col gap-6 fixed left-6 top-1/2 -translate-y-1/2 z-50 mix-blend-difference">
@@ -93,7 +93,7 @@ export default function Hero() {
       </div>
 
       {/* Main Content Container */}
-      <div className="absolute inset-0 z-20 max-w-7xl mx-auto px-6 md:px-12 pb-20 md:pb-[8%] flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end">
+      <div className="relative md:absolute md:inset-0 z-20 max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-16 md:py-0 md:pb-[8%] flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end min-h-screen md:min-h-0 md:h-full">
         {/* Left Block */}
         <div className="max-w-2xl">
           {/* Mobile Social Icons */}
@@ -141,7 +141,7 @@ export default function Hero() {
 
           {/* Heading */}
           <h1
-            className="text-white text-3xl md:text-5xl font-bold tracking-tight"
+            className="text-white text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight leading-tight"
             data-aos="fade-up"
           >
             {heroContent.greeting}, <br />
