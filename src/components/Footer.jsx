@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear()
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-[#d4d4d4] py-16 px-6 md:px-12 font-mono text-[10px] md:text-xs tracking-widest flex flex-col justify-between min-h-[50vh]">
+    <footer className="bg-[#111111] text-[#d4d4d4] py-16 px-6 md:px-12 font-mono text-[10px] md:text-xs tracking-widest flex flex-col gap-12">
       {/* Top row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Column 1: Taglines */}
@@ -32,13 +32,6 @@ export default function Footer() {
           <p className="uppercase">Available for opportunities</p>
           <p>{currentYear}</p>
         </div>
-      </div>
-
-      {/* Middle: Huge brand name typography */}
-      <div className="py-20 md:py-24 overflow-hidden text-center flex items-center justify-center">
-        <h2 className="text-[18vw] md:text-[16vw] leading-none font-sans font-bold tracking-tighter lowercase select-none text-[#f4f4f4] transition-all">
-          {personalInfo.brandName.toLowerCase()}
-        </h2>
       </div>
 
       {/* Bottom row */}
